@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.container_back {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.navigation {
+    width: 1600px;
+    background: #222222;
+    padding: 20px 231px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_logo {
+    margin-right: 41px;
+}
+
+.menu {
+    display: flex;
+    gap: 33px;
+}
+
+.main {
+    width: 1600px;
+    background: #F1E4E6;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F
+}
+
+.title h1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.title h2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+span {
+    color: #F16D7F;
+}
+
+.main_content {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px;
+    margin-top: 58px;
+    margin-bottom: 96px;
+}
+
+.layer {
+    position: relative;
+}
+
+.women .mini_header {
+    position: absolute;
+    margin: 105px 103px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.men .mini_header {
+    position: absolute;
+    margin: 112px 125px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.kids .mini_header {
+    position: absolute;
+    margin: 112px 122px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.accsesories .mini_header {
+    position: absolute;
+    margin: 65px 490px;
+    width: 159px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main_content .card h3 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.main_content .card h2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.mini_title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.mini_title h2 {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.mini_title p {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px;
+    margin-bottom: 48px;
+}
+
+.card_img {
+    margin-bottom: 25px;
+}
+
+.cards .card {
+    background: #F8F8F8;
+}
+
+.cards .card h3 {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.cards .card p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+
+.cards .card .price {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.women_img {
+    background-image: url(./img/back_women.jpg);
+}
+
+.men_img {
+    background-image: url(./img/back_men.png);
+}
+
+.kids_img {
+    background-image: url(./img/back_kids.png);
+}
+
+.accs_img {
+    background-image: url(./img/back_accsesories.png);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+button {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    background: none;
+    padding: 15px 39px;
+}
