@@ -18,16 +18,16 @@ body {
 }
 
 .container_back {
-    width: 1600px;
+    width: 100%vw;
     margin: 0 auto;
 }
 
 .navigation {
-    width: 1600px;
     background: #222222;
     padding: 20px 231px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 859px;
 }
 
 .nav_logo {
@@ -40,9 +40,9 @@ body {
 }
 
 .main {
-    width: 1600px;
     background: #F1E4E6;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -83,6 +83,25 @@ span {
 
 .layer {
     position: relative;
+}
+
+.mini_header h3 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+
+.mini_header h2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
 }
 
 .women .mini_header {
@@ -151,6 +170,7 @@ span {
     font-size: 30px;
     line-height: 36px;
     color: #222222;
+    margin-bottom: 6px;
 }
 
 .mini_title p {
@@ -186,6 +206,7 @@ span {
     font-size: 13px;
     line-height: 16px;
     color: #000000;
+    margin-left: 16px;
 }
 
 .cards .card p {
@@ -195,8 +216,7 @@ span {
     font-size: 14px;
     line-height: 17px;
     color: #5D5D5D;
-    margin-top: 12px;
-    margin-bottom: 18px;
+    margin: 12px 28px 18px 16px;
 }
 
 .cards .card .price {
@@ -206,6 +226,7 @@ span {
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
+    margin-left: 16px;
 }
 
 .women_img {
@@ -240,4 +261,111 @@ button {
     border: 1px solid #FF6A6A;
     background: none;
     padding: 15px 39px;
+}
+
+
+@media (min-width: 376px) and (max-width: 768px) {
+    .navigation {
+        padding: 18px 32px;
+        gap: 424px;
+    }
+
+    .title {
+        margin-right: 34px;
+    }
+
+    .title h1 {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .title h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .main {
+        justify-content: space-between;
+
+    }
+
+    .main img {
+        width: 386px;
+    }
+
+    .container {
+        width: 736px;
+    }
+
+    .main_content {
+        grid-template-columns: repeat(3, 232px);
+        gap: 20px;
+    }
+
+    .women img {
+        width: 232px;
+    }
+
+    .women .mini_header {
+        margin: 59px 39px;
+    }
+
+    .women_img {
+        background-image: url(./img/back_women_tablet.jpg);
+    }
+
+    .men img {
+        width: 232px;
+    }
+
+    .men .mini_header {
+        margin: 57px 61px 60px;
+    }
+
+    .men_img {
+        background-image: url(./img/back_men_tablet.png);
+    }
+
+    .kids img {
+        width: 232px;
+    }
+
+    .kids .mini_header {
+        margin: 58px 59px;
+    }
+
+    .kids_img {
+        background-image: url(./img/back_kids_tablet.png);
+    }
+
+    .accsesories img {
+        width: 734px;
+    }
+
+    .accsesories .mini_header {
+        margin: 33px 287px;
+    }
+
+    .accsesories_img {
+        background-image: url(./img/back_accs_tablet.jpg);
+    }
+
+    .main_content {
+
+        margin-bottom: 109px;
+    }
+
+    .mini_title {
+        margin-bottom: 73px;
+    }
+
+    .mini_title h2 {
+        margin-bottom: 3px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+        margin-bottom: 33px;
+    }
 }
