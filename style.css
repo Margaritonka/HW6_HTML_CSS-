@@ -30,13 +30,15 @@ body {
     gap: 859px;
 }
 
+.search {
+    display: flex;
+    gap: 41px;
+    align-items: center;
+}
+
 .menu img {
     width: 26px;
     height: 26px;
-}
-
-.nav_logo {
-    margin-right: 41px;
 }
 
 .menu {
@@ -270,7 +272,7 @@ button {
 }
 
 /* Стили для планшета */
-@media (max-width: 768px) {
+@media (min-width: 376px) and (max-width: 768px) {
     .navigation {
         padding: 18px 32px;
         gap: 424px;
@@ -317,7 +319,8 @@ button {
     }
 
     .women_img {
-        background-image: url(./img/back_women_tablet.jpg);
+        background-position: center;
+        background-size: cover;
     }
 
     .men img {
@@ -329,7 +332,8 @@ button {
     }
 
     .men_img {
-        background-image: url(./img/back_men_tablet.png);
+        background-position: center;
+        background-size: cover;
     }
 
     .kids img {
@@ -341,7 +345,8 @@ button {
     }
 
     .kids_img {
-        background-image: url(./img/back_kids_tablet.png);
+        background-position: center;
+        background-size: cover;
     }
 
     .accsesories img {
@@ -353,7 +358,8 @@ button {
     }
 
     .accsesories_img {
-        background-image: url(./img/back_accs_tablet.jpg);
+        background-position: center;
+        background-size: cover;
     }
 
     .main_content {
@@ -373,5 +379,79 @@ button {
         grid-template-columns: repeat(2, 360px);
         gap: 16px;
         margin-bottom: 33px;
+    }
+}
+
+
+/* Стили для мобильного */
+
+@media (max-width: 375px) {
+    .container {
+        width: 343px;
+    }
+
+    .navigation {
+        padding: 18px 26px 18px 16px;
+        gap: 200px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .main {
+        padding: 148px 56px;
+    }
+
+    .title h1 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .main_content {
+        width: 343px;
+        grid-template-columns: 343px;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+    .women img {
+        width: 343px;
+        background-repeat: no-repeat;
+    }
+
+    .men img {
+        width: 343px;
+        background-repeat: no-repeat;
+    }
+
+    .kids img {
+        width: 343px;
+        background-repeat: no-repeat;
+    }
+
+    .accsesories .mini_header {
+        margin: 30px 91px;
+    }
+
+    .accs_img {
+        width: 343px;
+        height: 111px;
+        background-image: url(./img/back_accs_mobile.jpg);
+    }
+
+    .mini_title {
+        margin-bottom: 65px;
+    }
+
+    .cards {
+        grid-template-columns: 359px;
+        gap: 16px;
+        justify-content: center;
     }
 }
