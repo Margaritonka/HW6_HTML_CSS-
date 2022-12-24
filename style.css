@@ -19,7 +19,7 @@ body {
 
 .container_back {
     width: 100%vw;
-    margin: 0 auto;
+    background: #F1E4E6;
 }
 
 .navigation {
@@ -48,10 +48,11 @@ body {
 }
 
 .main {
-    background: #F1E4E6;
+    width: 1140px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+
 }
 
 .title {
@@ -273,6 +274,7 @@ button {
 
 /* Стили для планшета */
 @media (min-width: 376px) and (max-width: 768px) {
+
     .navigation {
         padding: 18px 32px;
         gap: 424px;
@@ -293,8 +295,7 @@ button {
     }
 
     .main {
-        justify-content: space-between;
-
+        width: 736px;
     }
 
     .main img {
@@ -400,6 +401,7 @@ button {
     }
 
     .main {
+        width: 375px;
         padding: 148px 56px;
     }
 
