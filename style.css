@@ -22,6 +22,11 @@ body {
     background: #F1E4E6;
 }
 
+.container_footer_back {
+    width: 100%vw;
+    background: #222224;
+}
+
 .navigation {
     background: #222222;
     padding: 20px 231px;
@@ -257,7 +262,7 @@ span {
 .button {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 95px;
 }
 
 button {
@@ -270,6 +275,180 @@ button {
     border: 1px solid #FF6A6A;
     background: none;
     padding: 15px 39px;
+}
+
+
+
+.menu_footer {
+    padding: 104px 230px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu_footer article {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu_footer article p {
+    width: 300px;
+}
+
+.menu_footer .delivery {
+    width: 45px;
+    height: 32px;
+}
+
+.menu_footer .discount {
+    width: 40px;
+    height: 40px;
+}
+
+.menu_footer .assurance {
+    width: 47px;
+    height: 35px;
+}
+
+.menu_footer h3 {
+    margin-top: 28px;
+    margin-bottom: 16px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FBFBFB;
+
+
+}
+
+.menu_footer p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FBFBFB;
+}
+
+.subscribe {
+    background-image: url(./img/photo\ subscribe\(1\).jpg);
+    ;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 126px;
+    display: flex;
+    justify-content: center;
+    gap: 224px;
+}
+
+.subscribe form {
+    display: flex;
+}
+
+.subscribe input {
+    width: 256px;
+    height: 50px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    background: #E1E1E1;
+}
+
+.avatar {
+    margin-top: 97px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.avatar img {
+    margin-bottom: 30px;
+    width: 96px;
+}
+
+.avatar p {
+    margin-bottom: 22px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222224;
+}
+
+
+.input_email {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input_email h2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #222224;
+}
+
+.input_email h3 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #222224;
+    margin-bottom: 32px;
+}
+
+
+
+.send_email {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #F16D7F;
+    border-radius: 0 20px 20px 0;
+    border: none;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.footer p {
+    margin: 30px 0 30px 235px;
+}
+
+.footer .icons {
+    margin: 24px 230px 23px 0;
+    display: flex;
+    gap: 7px;
 }
 
 /* Стили для планшета */
@@ -381,6 +560,34 @@ button {
         gap: 16px;
         margin-bottom: 33px;
     }
+
+    .menu_footer {
+        padding: 48px 204px 64px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 49px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding-bottom: 140px;
+        background-position: 25%;
+    }
+
+    .input_email {
+        margin-top: 0px;
+    }
+
+    .footer p {
+        margin: 30px 305px 30px 32px;
+    }
+
+    .footer .icons {
+        margin: 24px 33px 23px 0;
+    }
+
 }
 
 
@@ -455,5 +662,69 @@ button {
         grid-template-columns: 359px;
         gap: 16px;
         justify-content: center;
+    }
+
+    .menu_footer {
+        padding: 48px 14px 81px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 47px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+        gap: 59px;
+        padding: 64px 14px 110px;
+        background-position: 25%;
+    }
+
+    .avatar {
+        margin-top: 0px;
+    }
+
+    .avatar img {
+        width: 91px;
+
+    }
+
+    .avatar p {
+        font-size: 19px;
+        line-height: 23px;
+    }
+
+    .input_email h2 {
+        font-size: 24px;
+        line-height: 37px;
+
+    }
+
+    .input_email h3 {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 22px;
+
+    }
+
+    .input_email {
+        margin-top: 0px;
+    }
+
+    .subscribe form {
+        width: 341px;
+    }
+
+
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer p {
+        margin: 40px 62px 9px;
+    }
+
+    .footer .icons {
+        margin: 43px 114px 0px;
     }
 }
