@@ -50,6 +50,101 @@ body {
     display: flex;
     gap: 33px;
     padding-top: 10px;
+    position: relative;
+}
+
+.five {
+    position: absolute;
+    color: white;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background-color: #F16D7F;
+    padding: 2px 5px;
+    border-radius: 600px;
+    left: 138px;
+    top: 3px;
+    ;
+}
+
+
+
+.menu {
+    position: relative;
+}
+
+.check {
+    position: absolute;
+    opacity: 0;
+    width: 26px;
+    height: 26px;
+
+}
+
+.check:checked~.open_menu {
+    display: block;
+}
+
+.open_menu {
+    position: absolute;
+    display: none;
+    top: 60px;
+    width: 232px;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 99px;
+    padding-bottom: 32px;
+    left: 100%;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.open_menu_title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.open_menu .man,
+.women,
+.kids {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 11px;
+    margin-bottom: 20px;
+}
+
+.open_menu_title2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.open_menu h3 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-left: 22px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 32px;
 }
 
 .main {
@@ -277,6 +372,11 @@ button {
     padding: 15px 39px;
 }
 
+button:hover {
+    color: white;
+    background-color: #FF6A6A;
+}
+
 
 
 .menu_footer {
@@ -432,7 +532,10 @@ button {
 
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 655px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -449,6 +552,18 @@ button {
     margin: 24px 230px 23px 0;
     display: flex;
     gap: 7px;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    --backgr: white;
+    --icon: black;
+}
+
+.icon:hover {
+    --backgr: #F16D7F;
+    --icon: white;
 }
 
 /* Стили для планшета */
