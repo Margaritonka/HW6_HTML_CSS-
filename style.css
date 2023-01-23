@@ -170,6 +170,7 @@ body {
 }
 
 .title h2 {
+    width: 377px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
@@ -303,6 +304,47 @@ span {
     margin-bottom: 25px;
 }
 
+.card .card1 {
+    position: relative;
+}
+
+.add_to_cart {
+    position: absolute;
+    width: 360px;
+    height: 425px;
+    background: rgba(58, 56, 56, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.add_to_cart button {
+    width: 139px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border: solid 1px white;
+    padding: 12px 12px 9px 14px;
+}
+
+.add_to_cart button::before {
+    content: url(./img/cart_icon.svg);
+    margin-right: 11px;
+    width: 26px;
+    height: 23px;
+}
+
+.card:hover .add_to_cart {
+    display: flex;
+}
+
 .cards .card {
     background: #F8F8F8;
 }
@@ -336,6 +378,7 @@ span {
     line-height: 19px;
     color: #F16D7F;
     margin-left: 16px;
+    margin-bottom: 20px;
 }
 
 .women_img {
@@ -452,6 +495,17 @@ button:hover {
     display: flex;
 }
 
+.subscribe form input {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222224;
+    opacity: 0.67;
+    padding-left: 22px;
+}
+
 .subscribe input {
     width: 256px;
     height: 50px;
@@ -564,6 +618,10 @@ button:hover {
 .icon:hover {
     --backgr: #F16D7F;
     --icon: white;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Стили для планшета */
